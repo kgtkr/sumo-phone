@@ -64,6 +64,10 @@ phina.define("MainScene", {
           }
         }
 
+        if (app.keyboard.getKey((i + 1).toString())) {
+          this.onpointstart();
+        }
+
         this.state.count--;
       };
 
